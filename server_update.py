@@ -14,7 +14,7 @@ CORS(app)
 def home(data):
     if data == "update":
         #อัพเดทโค้ดเว็บ
-        web = git.cmd.Git('/var/www/html_linaro')
+        web = git.cmd.Git('/var/www/linaro_new_logic')
         web.pull()
         time.sleep(10)
         #อัพเดทโค้ด hottub python
